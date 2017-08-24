@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "babel src -d lib && node --napi-modules lib/index.js"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "hmkit": "git+ssh://git@bitbucket.org/highmobility/hm-node-sdk.git"
+  }
+}
