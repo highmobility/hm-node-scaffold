@@ -7,6 +7,7 @@ const defaultIssuerPublicKey =
     'w9D0H6D18iXHXFN/mdTL3R22EjJFoEO4fTpHf5KYerqHz+d6JXJ7ClRpDpgJ7XXrJxBFsNHehdozBFSW9mXilg==';
 
 const hmkit = new HMKit(defaultDeviceCertificate, defaultDevicePrivateKey, defaultIssuerPublicKey);
+hmkit.staging();
 
 async function app() {
     const response = await hmkit.telematics.sendCommand(
