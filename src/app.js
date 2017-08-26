@@ -32,7 +32,7 @@ const hmkit = new HMKit(
 async function app() {
     /*
 
-     Before using Telematics in HMKit, you must get the Access Certificate for the car / emualator:
+     Before using Telematics in HMKit, you must get the Access Certificate for the car / emulator:
      - go to https://developers.high-mobility.com
      - LOGIN
      - go to Tutorials ›› SDK ›› Node.js for instructions to connect a service to the car
@@ -62,13 +62,13 @@ async function app() {
     );
 
     const response = await hmkit.telematics.sendCommand(
-        hmkit.parseAccessCertificate(accessCertificate).accessGainingSerialNumber, // car serial
+        accessCertificate.getVehicleSerial(),
         hmkit.commands.EngineCommand.turnOn()
     );
 
-    console.log(response.bytes()); // [0, 53, 1, 1]
-    console.log(response.parse()); // EngineResponse { engine: 1 }
+    console.log(response.bytes());
+    console.log(response.parse());
 }
 
-// run app
+// Run your app
 app();
