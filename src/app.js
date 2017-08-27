@@ -57,8 +57,8 @@ async function app() {
      
      */
 
-        "PASTE ACCESS TOKEN HERE"
     const accessCertificate = await hmkit.downloadAccessCertificate(
+        "PASTE ACCESS TOKEN HERE"
     );
 
     const response = await hmkit.telematics.sendCommand(
