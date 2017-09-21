@@ -9,7 +9,7 @@ $ npm install
 
 # Run the app
 
-Follow the steps in `src/app.js` and run the using `npm`
+Follow the steps in `src/app.js` and run the app using `npm`
 ```
 $ npm start
 
