@@ -1,9 +1,6 @@
-#Install dependencies
-
+# Install dependencies
 
 ```
-$ yarn
-// or
 $ npm install
 ```
 
@@ -21,4 +18,12 @@ src\index.js -> lib\index.js
 (node:1212) Warning: N-API is an experimental feature and could change at any time.
 Uint8Array [ 0, 53, 1, 1 ]
 EngineResponse { engine: 'on' }  
+```
+
+# Windows
+
+When using Windows, start the app with:
+
+```
+$ npm run start-windows
 ```
