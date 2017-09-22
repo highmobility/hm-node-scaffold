@@ -1,3 +1,13 @@
+# Overview
+
+This app is a simple npm project that fetches the car engine state. The following has been done:
+
+1. New npm project
+2. HMKit module included
+3. HMKit initialised with snippet from the Developer Center https://developers.high-mobility.com/
+4. One example included to send a Telematics command to the car to get the engine state
+
+
 # Install dependencies
 
 ```
