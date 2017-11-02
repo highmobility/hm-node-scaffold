@@ -7,7 +7,7 @@ import HMKit from 'hmkit';
  - choose DEVELOP (in top-left, the (2nd) button with a spanner)
  - choose APPLICATIONS (in the left), then CLOUD APPS
  - create a new Cloud App, enter the name of your server
- - click on the creaated Cloud App
+ - click on the created Cloud App
  - copy the snippet
  - paste it below this comment box
  - you made it!
