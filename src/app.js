@@ -1,30 +1,20 @@
 import HMKit from 'hmkit';
 
 /*
- Before using the HMKit, you must initialise the library with a snippet from the Developer Center:
- - go to https://developers.high-mobility.com
- - LOGIN
- - choose DEVELOP (in top-left, the (2nd) button with a spanner)
- - choose APPLICATIONS (in the left), then CLOUD APPS
- - create a new Cloud App, enter the name of your server
- - click on the created Cloud App
- - copy the snippet
- - paste it below this comment box
- - you made it!
-
- Bonus steps after completing the above:
- - relax
- - celebrate
- - explore the APIs
-
-
- An example of a snippet copied from the Developer Center might look:
-
-const hmkit = new HMKit(
-  "dGVzdHPXjh7VTyjZt8XoNrK/hJDUSSj1i4VzQpIcUds08P9QzqpbWUKl46VVa0LC5AZJTxDr6FSVlOFiD8EKCSQVG1QXJe7umDAnRFzgYnUKHm5jA9LwayteCRB49ZyUPgpAOXJMsSAqXbouX9rDU6dQ+UCjn7oL6+ZDBbDA+X71LFhuR9XNuV8VBiV5T3gID8TFfME67Vp3",
-  "uGGjPucN7SnP3BxV3a4VH6q0yy+oLbf3UM5+GtLLSSc="
-);
-
+ * Before using HMKit, you'll have to initialise it
+ * with a snippet from the Platform Workspace:
+ *
+ *   1. Sign in to the workspace
+ *   2. Go to the LEARN section and choose Node.js
+ *   3. Follow the Getting Started instructions
+ *
+ * By the end of the tutorial you will have a snippet for initialisation,
+ * that looks something like this:
+ *
+ *   const hmkit = new HMKit(
+ *     "dGVzdHPXjh7VTyjZt8XoNrK/hJDUSSj1i4VzQpIcUds08P9QzqpbWUKl46VVa0LC5AZJTxDr6FSVlOFiD8EKCSQVG1QXJe7umDAnRFzgYnUKHm5jA9LwayteCRB49ZyUPgpAOXJMsSAqXbouX9rDU6dQ+UCjn7oL6+ZDBbDA+X71LFhuR9XNuV8VBiV5T3gID8TFfME67Vp3",
+ *     "uGGjPucN7SnP3BxV3a4VH6q0yy+oLbf3UM5+GtLLSSc="
+ *   );
  */
 
 // PASTE CLIENT CERTIFICATE SNIPPET HERE
