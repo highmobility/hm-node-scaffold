@@ -24,13 +24,17 @@ async function app() {
     "PASTE ACCESS TOKEN HERE"
   );
 
-  const response = await hmkit.telematics.sendCommand(
-    accessCertificate.getVehicleSerial(),
-    hmkit.commands.EngineCommand.turnOn()
-  );
+  try {
+    const response = await hmkit.telematics.sendCommand(
+      accessCertificate.getVehicleSerial(),
+      hmkit.commands.EngineCommand.turnOn()
+    );
 
-  console.log(response.bytes());
-  console.log(response.parse());
+    console.log(response.bytes());
+    console.log(response.parse());
+  } catch (e) {
+    console.log(e);
+  }
 }
 
 // Run your app
