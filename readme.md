@@ -1,22 +1,27 @@
 # Overview
 
-This app is a simple npm project that fetches the car engine state. The following has been done:
+This app is a simple npm project that fetches the car engine state. The following is included:
 
 1. New npm project
-2. HMKit module included
-3. HMKit initialised with snippet from the Developer Center https://developers.high-mobility.com/
-4. One example included to send a Telematics command to the car to get the engine state
+2. HMKit module
+3. HMKit to be initialised with snippet from the Developer Center -> https://high-mobility.com/develop
+4. The example sends a Telematics command to the car to get the engine state
 
 
-# Install dependencies
+# Configuration
+
+Before running the app, make sure to install dependencies with the following command:
 
 ```
 $ npm install
 ```
 
+Then follow the steps in `src/app.js`, adding the Client Certificate and Access Token where necessary.
+
 # Run the app
 
-Follow the steps in `src/app.js` and run the app using `npm`
+To run the app using `npm`, type the following command:
+
 ```
 $ npm start
 
@@ -37,3 +42,7 @@ When using Windows, start the app with:
 ```
 $ npm run start-windows
 ```
+
+# Questions or Comments ?
+
+If you have questions or if you would like to send us feedback, join our [Slack Channel](https://slack.high-mobility.com/) or email us at [support@high-mobility.com](mailto:support@high-mobility.com).
