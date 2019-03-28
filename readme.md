@@ -7,7 +7,6 @@ This app is a simple npm project that fetches the car engine state. The followin
 3. HMKit to be initialised with snippet from the Developer Center -> https://high-mobility.com/develop
 4. The example sends a Telematics command to the car to get the engine state
 
-
 # Configuration
 
 Before running the app, make sure to install dependencies with the following command:
@@ -31,8 +30,15 @@ $ npm start
 src/app.js -> lib/app.js
 src/index.js -> lib/index.js
 (node:97243) Warning: N-API is an experimental feature and could change at any time.
-Uint8Array [ 0, 53, 1, 1, 0, 1, 1 ]
-EngineResponse { ignition: 'engine_on' }
+Uint8Array [0, 53, 1, 1, 0, 4, 1, 0, 1, 1, 2, 0, 4, 1, 0, 1, 0, 162, 0, 11, 1, 0, 8, 0, 0, 1, 105, 195, 133, 39, 227]
+EngineResponse {
+  ignition: {
+    value: 'on'
+  },
+  accessoriesIgnition: {
+    value: 'off'
+  }
+}
 ```
 
 # Windows
