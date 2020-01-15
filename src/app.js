@@ -1,4 +1,4 @@
-import HMKit from 'hmkit';
+import HMKit from "hmkit";
 
 /*
  * Before using HMKit, you'll have to initialise it
@@ -31,7 +31,9 @@ async function app() {
   try {
     const response = await hmkit.telematics.sendCommand(
       accessCertificate.getVehicleSerial(),
-      hmkit.commands.EngineCommand.turnOn()
+      hmkit.commands.Ignition.turnIgnitionOnOff({
+        status: "on" // Available values: ['on', 'off']
+      })
     );
 
     console.log(response.bytes());
