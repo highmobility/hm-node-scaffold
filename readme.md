@@ -41,14 +41,6 @@ EngineResponse {
 }
 ```
 
-# Windows
-
-When using Windows, start the app with:
-
-```
-$ npm run start-windows
-```
-
 # Questions or Comments ?
 
 If you have questions or if you would like to send us feedback, join our [Slack Channel](https://slack.high-mobility.com/) or email us at [support@high-mobility.com](mailto:support@high-mobility.com).
