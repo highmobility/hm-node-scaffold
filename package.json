@@ -7,6 +7,6 @@
     "babel-cli": "^6.26.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.0",
-    "hmkit": "^11.0.1"
+    "hmkit": "^11.1.1"
   }
 }
