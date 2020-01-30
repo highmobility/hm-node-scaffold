@@ -30,10 +30,10 @@ async function app() {
 
   try {
     const response = await hmkit.telematics.sendCommand(
-      accessCertificate.getVehicleSerial(),
       hmkit.commands.Ignition.turnIgnitionOnOff({
         status: "on" // Available values: ['on', 'off']
-      })
+      }),
+      accessCertificate
     );
 
     console.log(response.bytes());
