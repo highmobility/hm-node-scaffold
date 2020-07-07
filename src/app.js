@@ -29,12 +29,33 @@ async function app() {
   );
 
   try {
+
+    // Get the vehicle's Diagnostic State (includes Mileage)
+    const response = await hmkit.telematics.sendCommand(
+      hmkit.commands.Diagnostics.getState(),
+      accessCertificate
+    );
+    
+    /* To turn the vehicle's ignition on, comment out the above command and use the command below instead.
+     * NOTE: This command requires the following permission: Ignition: Set Status.
+     * To enable it, edit the app's permissions and toggle "Show hidden permissions", then open the
+     * "Ignition" tab and select "Set Status". Save the new permission selection and then refresh the
+     * emulator.
+
+     * To find a list of all commands, visit
+     * https://high-mobility.com/learn/documentation/cloud-sdks/node-js/commands/
+     */
+
+     
+    // Turn on the Ignition:
+    /*  
     const response = await hmkit.telematics.sendCommand(
       hmkit.commands.Ignition.turnIgnitionOnOff({
         status: "on" // Available values: ['on', 'off']
       }),
       accessCertificate
     );
+    */
 
     console.log(response.bytes());
     console.log(response.parse());
