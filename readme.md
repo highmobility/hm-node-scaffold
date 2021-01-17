@@ -30,13 +30,18 @@ $ npm start
 src/app.js -> lib/app.js
 src/index.js -> lib/index.js
 (node:97243) Warning: N-API is an experimental feature and could change at any time.
-Uint8Array [0, 53, 1, 1, 0, 4, 1, 0, 1, 1, 2, 0, 4, 1, 0, 1, 0, 162, 0, 11, 1, 0, 8, 0, 0, 1, 105, 195, 133, 39, 227]
-EngineResponse {
-  ignition: {
-    value: 'on'
+Uint8Array [12, 0, 53, 1, 1, 0, 15, 1, 0, 1, 1, 2, 0, 8, 0, 0, 1, 119, 17, 52, 180, 129, 2, 0, 15, 1, 0, 1, 1, 2, 0, 8, 0, 0, 1, 115, 230, 245, 65, 200, 3, 0, 15, 1, 0, 1, 2, 2, 0, 8, 0, 0, 1, 118, 70, 243, 5, 254]
+IgnitionResponse {
+  status: {
+    timestamp: 2021-01-17T16:36:42.753Z,
+    data: { value: 'on' } },
+  accessoriesStatus: {
+    timestamp: 2020-08-13T08:34:59.656Z,
+    data: { value: 'on' }
   },
-  accessoriesIgnition: {
-    value: 'off'
+  state: {
+    timestamp: 2020-12-09T10:01:40.606Z,
+    data: { value: 'accessory' }
   }
 }
 ```
