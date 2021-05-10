@@ -5,7 +5,7 @@ import HMKit from "hmkit";
  * with a snippet from the Platform Workspace:
  *
  *   1. Sign in to the workspace
- *   2. Go to the LEARN section and click "Check Out Node.js"
+ *   2. Go to the DOCS section and click "Guides" > "Node.js"
  *   3. Follow the Getting Started instructions
  *
  * By the end of the tutorial you will have a Client Certificate
@@ -31,7 +31,7 @@ async function app() {
   try {
     const response = await hmkit.telematics.sendCommand(
       hmkit.commands.Ignition.turnIgnitionOnOff({
-        status: "on" // Available values: ['on', 'off']
+        state: "on" // Available values: ['on', 'off', 'start', 'lock', 'accessory']
       }),
       accessCertificate
     );
