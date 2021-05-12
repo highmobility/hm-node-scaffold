@@ -41,7 +41,7 @@ IgnitionResponse {
   },
   state: {
     timestamp: 2020-12-09T10:01:40.606Z,
-    data: { value: 'accessory' }
+    data: { value: 'on' }
   }
 }
 ```

@@ -6,6 +6,6 @@
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
-    "hmkit": "^12.1.0"
+    "hmkit": "^13.0.0"
   }
 }
